@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class Day2 {
+public class Day3 {
 
     public static long part1(List<String> input) {
         return countTrees(input, 3, 1);

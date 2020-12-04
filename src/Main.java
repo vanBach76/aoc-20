@@ -7,17 +7,15 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        String input = Files.readString(Path.of("resources/input_day2.txt"));
-
+        String input = Files.readString(Path.of("resources/input_day3.txt"));
+        String separator = "\r\n\r\n";
 //        List<Integer> intInput = Arrays.asList(input.split("\r\n")).stream()
 //                .map(Integer::parseInt)
 //                .collect(Collectors.toList());
 
-        List<String> stringInput = Arrays.asList(input.split("\r\n"));
+        List<String> stringInput = Arrays.asList(input.split(separator));
 
-        long resultPart1 = Day2.part1(stringInput);
-        long resultPart2 = Day2.part2(stringInput);
+        long resultPart1 = Day4.part2(stringInput);
         System.out.println("Result part 1 was: " + resultPart1);
-        System.out.println("Result part 2 was: " + resultPart2);
     }
 }
