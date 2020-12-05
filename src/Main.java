@@ -6,16 +6,16 @@ import java.util.List;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-        String input = Files.readString(Path.of("resources/input_day3.txt"));
-        String separator = "\r\n\r\n";
+    public static void main(String[] args) throws Exception {
+        String input = Files.readString(Path.of("resources/input_day5.txt"));
+        String separator = "\r\n";
 //        List<Integer> intInput = Arrays.asList(input.split("\r\n")).stream()
 //                .map(Integer::parseInt)
 //                .collect(Collectors.toList());
 
         List<String> stringInput = Arrays.asList(input.split(separator));
 
-        long resultPart1 = Day4.part2(stringInput);
-        System.out.println("Result part 1 was: " + resultPart1);
+        int result = Day5.part2(stringInput);
+        System.out.println("Result was: " + result);
     }
 }
